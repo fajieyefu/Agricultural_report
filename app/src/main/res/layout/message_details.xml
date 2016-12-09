@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stroke_green"
+    android:orientation="vertical">
+
+    <fajieyefu.com.agricultural_report.layout.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </fajieyefu.com.agricultural_report.layout.TitleLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="状态"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/apply_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="审批状态："/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="基本信息"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/work_area_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="工作区:"
+                        />
+
+                    <TextView
+                        android:id="@+id/work_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text=""
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/community_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="社区(村):"
+                        />
+
+                    <TextView
+                        android:id="@+id/community"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text=""
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/apply_code_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="申请单号:"
+                        />
+
+                    <TextView
+                        android:id="@+id/apply_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text=""
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/service_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="业务类型:"
+                        />
+
+                    <TextView
+                        android:id="@+id/service_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="支出"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/apply_type_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="申请类型:"
+                        />
+
+                    <TextView
+                        android:id="@+id/apply_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text=""
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/apply_amt_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="申请金额:"
+                        />
+
+                    <TextView
+                        android:id="@+id/apply_amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="2000元"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/record_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="创建日期:"
+                        />
+
+                    <TextView
+                        android:id="@+id/record_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text=""
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contract_A_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="甲方:"
+                        />
+
+                    <TextView
+                        android:id="@+id/contract_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="w"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contract_B_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="乙方:"
+                        />
+
+                    <TextView
+                        android:id="@+id/contract_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="乙方"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/start_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="开始时间:"
+                        />
+
+                    <TextView
+                        android:id="@+id/start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="2016-11-08"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/end_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="结束时间:"
+                        />
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="2016-11-10"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contract_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="合同名称:"
+                        />
+
+                    <TextView
+                        android:id="@+id/contract_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="d"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="合同内容:"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="dd"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/apply_man_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="申请人:"
+                        />
+
+                    <TextView
+                        android:id="@+id/apply_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:text="张三"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="流程详细"
+                android:textSize="16sp"/>
+
+            <ListView
+                android:id="@+id/process_lv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                >
+
+            </ListView>
+            <LinearLayout
+                android:id="@+id/file_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="附件"
+                    android:textSize="16sp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/files_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:scrollbars="horizontal"
+                    >
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="80dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审 批 人: "/>
+
+            <TextView
+                android:id="@+id/check_man"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="审批时间:"/>
+            <TextView
+                android:id="@+id/check_time"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审批状态:"/>
+
+            <TextView
+                android:id="@+id/apply_flag"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="审批顺序:"/>
+            <TextView
+                android:id="@+id/apply_order"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="审批说明:"/>
+
+            <TextView
+                android:id="@+id/check_description"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                />
+
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

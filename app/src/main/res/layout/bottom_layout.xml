@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+
+    <RadioGroup
+        android:id="@+id/main_bottomTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efeff4"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        >
+
+        <RadioButton
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_message"
+            android:gravity="center"
+            android:text="单据状态"
+            android:textColor="@drawable/main_tab_textcoler_selector"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/message_history"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_history"
+            android:gravity="center"
+            android:text="历史单据"
+            android:textColor="@drawable/main_tab_textcoler_selector"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/documents"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_documents"
+            android:gravity="center"
+            android:text="单据申报"
+            android:textColor="@drawable/main_tab_textcoler_selector"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/myInfo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_myinfo"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/main_tab_textcoler_selector"
+            android:textSize="12sp"/>
+    </RadioGroup>
+
+</RelativeLayout>

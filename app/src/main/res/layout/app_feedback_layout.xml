@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stroke_green"
+    android:orientation="vertical">
+
+    <fajieyefu.com.agricultural_report.layout.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </fajieyefu.com.agricultural_report.layout.TitleLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="意见或建议"
+        android:textColor="@color/middle_black"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="请输入您对APP的意见或建议(限200字)"
+        android:textColor="@color/headgreen"
+        android:textSize="16sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="5dp"
+        android:maxLength="200"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="联系电话:"
+        android:textColor="@color/middle_black"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:hint="请输入您的联系方式，便于我们与您联系"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/submit_button_green"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+</LinearLayout>

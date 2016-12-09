@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fajieyefu.com.agricultural_report.layout.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </fajieyefu.com.agricultural_report.layout.TitleLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="区域："/>
+
+                <TextView
+                    android:id="@+id/work_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_rect_corner_white"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*收入内容"
+                    android:textColor="@color/deep_black"/>
+
+                <EditText
+                    android:id="@+id/apply_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="请输入收入内容"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect_corner_white"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/t0"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*合同号："
+                    android:textColor="@color/deep_black"
+                    />
+
+                <EditText
+                    android:id="@+id/contract_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/t0"
+                    android:background="@null"
+                    android:hint="请输入合同名称"
+                    android:textSize="15sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect_corner_white"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*收入金额："
+                    android:textColor="@color/deep_black"
+                    />
+
+                <EditText
+                    android:id="@+id/apply_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/t3"
+                    android:background="@null"
+                    android:hint="请输入收入金额"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/yuan"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect_corner_white"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*存入日期："
+                    android:textColor="@color/deep_black"
+                    />
+
+                <TextView
+                    android:id="@+id/deposit_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/t4"
+                    android:background="@null"
+                    android:hint="请存入时间"
+                    android:textSize="15sp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect_corner_white"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/t7"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*存款账户："
+                    android:textColor="@color/deep_black"
+                    />
+
+                <TextView
+                    android:id="@+id/deposit_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/t7"
+                    android:background="@null"
+                    android:hint="请选择要存入的账户"
+                    android:textSize="15sp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/icon_xiala"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_corner_white"
+                    android:text="保存"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/commit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_rect_corner_white"
+                    android:text="提交"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

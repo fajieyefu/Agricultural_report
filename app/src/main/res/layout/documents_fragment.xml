@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/stroke_green"
+             >
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/title_layout"/>
+    <TextView
+        android:text="请选择以下单据类型"
+        android:background="@drawable/oval_rect"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightgrey"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/fund_application"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_layout"
+            android:gravity="center"
+            android:text="资金申请单"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/request"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_layout"
+            android:gravity="center"
+            android:text="请示单"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/pre_contract"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_layout"
+            android:gravity="center"
+            android:text="合同预审单"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/income_declaration"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_layout"
+            android:gravity="center"
+            android:text="收入申报单"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/official_seal_application"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_layout"
+            android:gravity="center"
+            android:text="公章申请单"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    
+
+</LinearLayout>
